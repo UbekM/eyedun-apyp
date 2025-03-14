@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Èdèdún APYP -> AI Powered Yorùbá Platform</title>
     <link rel="stylesheet" href="/pages/login/login.css" />
-    <script src="index.js" defer></script>
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <script src="login.js" defer></script>
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <!-- MAIN -->
@@ -30,17 +30,29 @@
         <form action="">
           <div>
             <label for="Email-address">Email</label>
-            <input type="email" placeholder="Input Email Address" required />
+            <input
+              type="email"
+              placeholder="Input Email Address"
+              class="input"
+              required
+            />
+            <small class="error"></small>
           </div>
           <div>
             <label for="password">Password</label>
             <div class="password">
-              <input type="email" placeholder="Input your password" required />
+              <input
+                type="password"
+                placeholder="Input your password"
+                required
+                class="input"
+              />
               <img src="/assets/password.svg" alt="" />
             </div>
+            <small class="error"></small>
           </div>
 
-          <button class="btn1">Login</button>
+          <button class="btn1" id="submit-btn">Login</button>
         </form>
         <p>Forgot Password? <a> Recover</a></p>
         <p>Or Login with</p>

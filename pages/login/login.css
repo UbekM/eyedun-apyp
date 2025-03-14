@@ -15,6 +15,8 @@
   --bg-grey-light: #f0f0f3;
   --bg-grey-dark: #e8e8ec;
   --bg-button: #3277ac;
+
+  --disabled: #e3effc;
 }
 
 * {
@@ -115,6 +117,10 @@ main {
       margin-top: 2rem;
       padding: 0;
 
+      small {
+        color: red;
+      }
+
       div {
         display: flex;
         flex-direction: column;
@@ -158,6 +164,11 @@ main {
 
         &:hover {
           background: var(--primary);
+        }
+
+        &:disabled {
+          background: var(--disabled);
+          cursor: not-allowed;
         }
       }
     }
